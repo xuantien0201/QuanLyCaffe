@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 
 public class MainView extends JFrame {
     JPanel pnMenu, pnCard;
-    JLabel lblKhachHang, lblHoaDon;
+    JLabel lblKhachHang, lblHoaDon, lblKhuyenMai;
     CardLayout cardLayout;
     KhachHangView khachHangView;
     Home homeView;
@@ -37,9 +37,13 @@ public class MainView extends JFrame {
         lblHoaDon = new JLabel("  Quản lý hóa đơn");
         styleMenuLabel(lblHoaDon);
 
+        lblKhuyenMai = new JLabel("  Khuyến mãi");
+        styleMenuLabel(lblKhuyenMai);
+        
         pnMenu.add(Box.createVerticalStrut(20));
         pnMenu.add(lblKhachHang);
         pnMenu.add(lblHoaDon);
+        pnMenu.add(lblKhuyenMai);
 
         // ========== KHU VỰC HIỂN THỊ CHÍNH ==========
         cardLayout = new CardLayout();
